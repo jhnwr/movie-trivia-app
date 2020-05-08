@@ -3,10 +3,8 @@ import imdb
 
 app = Flask(__name__)
 
-
 @app.route('/')
 def index_get():
-
     return render_template('index.html')
 
 @app.route('/', methods=['GET', 'POST'])
